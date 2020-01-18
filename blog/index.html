@@ -1,0 +1,127 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Blog</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+
+  <style>
+	body {
+		background-image: url("radler.jpg")
+		}
+	header { 
+		text-align: center;
+		}
+    /* Align and justify items in the grid to the center */
+	
+	.container{
+		display:grid;
+		/* flex-direction: row; */
+		width: 80vw;
+		height: 100vh;
+		grid-template-column: 500px 1fr;
+		grid-template-row: 500px;
+		grid-gap: 50px;
+		grid-template-areas:
+			"hd hd hd hd hd"
+			"bottomLeft bottomRight" 
+		grid-auto-columns: minmax (100px);
+		grid-auto-rows: minmax (100px);
+		align-items: stretch;
+		justify-content: space-evenly;
+		margin: auto;
+		border: 5px solid gold;
+		padding: 50px;
+		}
+		
+	article{
+		display:flex;
+		}
+		
+	section{
+		display:flex;
+		}
+		
+	.box{
+		display:flex;
+		width: 500px;
+        align-items: stretch;
+		justify-content: center;
+        border: 2px solid black;
+		}
+		
+	#one{ 
+		!important
+		grid-area: bottomRight;
+		align-items: center;
+		justify-content: center;
+		}
+		
+	#two{ 
+		background-color: white;
+		grid-area: bottomLeft;
+		align-items: center;
+		justify-content: center;
+		
+		}
+		
+		a:link {
+			color: #000000;
+			}
+	
+		a:visited {
+			color: black;
+			}
+	
+		a:hover {
+			color: gold;
+			text-decoration:none;
+		}	
+		
+	footer {
+		color: gold;
+		text-align: center
+		}	
+	
+		
+  </style> 
+  </head>
+  
+  <body>
+	
+			<div class="container">
+				<div id="header">
+					<h1> My New Hobby: Volunteering at Beer Festivals!</h1><hr>
+					<nav><a href="https://www.leashlessbrewing.com"> Places to go</a> &nbsp;&nbsp;&nbsp; <a href="https://www.rockstarbeer.com"><em> Where I volunteer for beer festivals &nbsp;(click here)</a>
+				</div>
+	
+				<article>
+					<section>
+						<div class="box" id="one"><a href="post.html"><h1>Blog Posts</h1></a></div>
+						<div class="box" id="two"><h6>Information on different types of beer!
+							<ul>
+								<li>Lager</li>
+									<blockquote>Smooth-flavored brew made with low stress cold fermentation. </blockquote>
+								<li>Ale</li>
+									<blockquote> Any beer tht is not a lager is an ale, but ale yeast ferments at warmer temperatures. </blockquote>
+								<li>Rye</li>
+									<blockquote>Cloudy and grainy tasting like a wheat beer, but rye adds "spiciness" to the brew. </blockquote>
+								<li>Blonde</li>
+									<blockquote>Middle-of-the-road, people-pleasing light beer with no overbearing malts or bitter hoppiness. </blockquote>
+								<li>Stout</li>
+									<blockquote>Heavily roasted grains give this ale its roasty coffee and chocolate notes... and of course its black color. </blockquote>
+								<li>Pilsner</li>
+									<blockquote>Light lager originating from the Czech city of Pilsen. </blockquote>
+								<li>Hefeweizen</li>
+									<blockquote>German-style wheat beer with strong notes of banana and clove. </blockquote>
+							</ul></h6>
+						</div>
+		
+			</div>
+	
+	<footer><strong>&copy Copyright 2020  Amber S Thomas</footer>
+	
+					</section>
+				</article>
+  </body>
+</html>
